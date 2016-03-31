@@ -10,6 +10,9 @@ If I walk over to the crystals on my right, the game crashes.
 Some loadout info if it helps:
 http://imgur.com/ZE2MZgM
 
+The crash in video form as it happens everytime:
+https://youtu.be/e-_L-R_EPKw
+
 //Crash details:
 
 ___________________________________________
@@ -42,4 +45,4 @@ called from - gml_Script_DrawWithXRay (line 32)
 called from - gml_Object_DecorXRayBlock_Draw_0 (line 7)
 called from - gml_Object_Scenery_Draw_0 (line 31)
 
-//Then several more errors until the game aborts.
+//Then several more errors, usually repeats, until the game forces me to abort.

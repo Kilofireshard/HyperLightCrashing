@@ -1,0 +1,45 @@
+So I was playing through and encountered a game breaking bug.
+
+This is the location of the Dungeon I was in:
+http://imgur.com/Eu2Ui48
+
+This is where it happened:
+http://imgur.com/2n0v58b
+If I walk over to the crystals on my right, the game crashes.
+
+Some loadout info if it helps:
+http://imgur.com/ZE2MZgM
+
+//Crash details:
+
+___________________________________________
+############################################################################################
+ERROR in
+action number 1
+of Draw Event
+for object DecorXRayBlock:
+
+Trying to draw non-existing sprite.
+############################################################################################
+--------------------------------------------------------------------------------------------
+called from - gml_Script_DrawWithXRay (line 32)
+called from - gml_Object_DecorXRayBlock_Draw_0 (line 7)
+called from - gml_Object_Scenery_Draw_0 (line 31)
+called from - gml_Object_BG_Draw_0 (line 115)
+
+//Followed by:
+___________________________________________
+############################################################################################
+ERROR in
+action number 1
+of Draw Event
+for object DecorXRayBlock:
+
+Trying to draw non-existing sprite.
+############################################################################################
+--------------------------------------------------------------------------------------------
+called from - gml_Script_DrawWithXRay (line 32)
+called from - gml_Object_DecorXRayBlock_Draw_0 (line 7)
+called from - gml_Object_Scenery_Draw_0 (line 31)
+
+//Then several more errors until the game aborts.
